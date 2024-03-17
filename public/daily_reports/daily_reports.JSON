@@ -1,0 +1,124 @@
+{
+  "daily_reports": [
+    {
+      "id": "EMP001",
+      "name": "John Doe",
+      "img": "/src/assets/images/p1.jpeg",
+      "work_site": "Site A",
+      "entry_time": "08:00",
+      "exit_time": "16:00",
+      "work_hour": 8,
+      "monthly_total_hour": 160, 
+      "yearly_total_hour": 1920,
+      "post": "Completed construction of new building wing."
+    },
+    {
+      "id": "EMP002",
+      "name": "Jane Smith",
+      "img": "/src/assets/images/p2.jpeg",
+      "work_site": "Site B",
+      "entry_time": "09:00",
+      "exit_time": "16:00",
+      "work_hour": 7,
+      "monthly_total_hour": 147, 
+      "yearly_total_hour": 1764,
+      "post": "Installed new electrical wiring in office area."
+    },
+    {
+      "id": "EMP003",
+      "name": "Michael Johnson",
+      "img": "/src/assets/images/p3.jpeg",
+      "work_site": "Site A",
+      "entry_time": "08:30",
+      "exit_time": "17:30",
+      "work_hour": 9,
+      "monthly_total_hour": 172.5, 
+      "yearly_total_hour": 2070,
+      "post": "Laid foundation for upcoming project."
+    },
+    {
+      "id": "EMP004",
+      "name": "Emily Williams",
+      "img": "/src/assets/images/p4.jpeg",
+      "work_site": "Site C",
+      "entry_time": "07:00",
+      "exit_time": "13:00",
+      "work_hour": 6,
+      "monthly_total_hour": 138, 
+      "yearly_total_hour": 1656,
+      "post": "Painted exterior walls of existing structure."
+    },
+    {
+      "id": "EMP005",
+      "name": "David Brown",
+      "img": "/src/assets/images/p5.jpeg",
+      "work_site": "Site B",
+      "entry_time": "08:30",
+      "exit_time": "16:30",
+      "work_hour": 8,
+      "monthly_total_hour": 160, 
+      "yearly_total_hour": 1920,
+      "post": "Assembled and installed new furniture in meeting rooms."
+    },
+    {
+      "id": "EMP006",
+      "name": "Jessica Miller",
+      "img": "/src/assets/images/p6.jpeg",
+      "work_site": "Site A",
+      "entry_time": "09:00",
+      "exit_time": "16:00",
+      "work_hour": 7,
+      "monthly_total_hour": 147, 
+      "yearly_total_hour": 1764,
+      "post": "Performed routine maintenance on heavy machinery."
+    },
+    {
+      "id": "EMP007",
+      "name": "Christopher Wilson",
+      "img": "/src/assets/images/p7.jpeg",
+      "work_site": "Site C",
+      "entry_time": "08:00",
+      "exit_time": "17:00",
+      "work_hour": 9,
+      "monthly_total_hour": 160, 
+      "yearly_total_hour": 1920,
+      "post": "Excavated area for underground utilities installation."
+    },
+    {
+      "id": "EMP008",
+      "name": "Sarah Garcia",
+      "img": "/src/assets/images/p8.jpeg",
+      "work_site": "Site A",
+      "entry_time": "08:00",
+      "exit_time": "16:00",
+      "work_hour": 8,
+      "monthly_total_hour": 147, 
+      "yearly_total_hour": 1764,
+      "post": "Installed new HVAC system in main building."
+    },
+    {
+      "id": "EMP009",
+      "name": "James Rodriguez",
+      "img": "/src/assets/images/p9.jpeg",
+      "work_site": "Site B",
+      "entry_time": "08:30",
+      "exit_time": "15:30",
+      "work_hour": 7,
+      "monthly_total_hour": 172.5, 
+      "yearly_total_hour": 2070,
+      "post": "Surveyed land for future expansion project."
+    },
+    {
+      "id": "EMP010",
+      "name": "Linda Martinez",
+      "img": "/src/assets/images/p10.jpeg",
+      "work_site": "Site C",
+      "entry_time": "07:00",
+      "exit_time": "13:00",
+      "work_hour": 6,
+      "monthly_total_hour": 138, 
+      "yearly_total_hour": 1656,
+      "post": "Poured concrete for foundation of new structure."
+    }
+  ]
+}
