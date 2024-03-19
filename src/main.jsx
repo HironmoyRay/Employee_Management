@@ -6,6 +6,7 @@ import Home from "./component/Home/Home";
 import CreateEmployee from "./pages/CreateEmployee/CreateEmployee";
 import SignInForm from "./pages/SignInForm/SignInForm";
 import Employees from "./pages/Employees/Employees";
+import Details from "./pages/Details/Details";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
         path:"/employees",
         loader:()=>fetch("../public/daily_reports/daily_reports.JSON"),
         element:<Employees></Employees>
+      },
+      {
+        path:"/employees/:id",
+        loader:()=>fetch("../public/daily_reports/daily_reports.JSON"),
+        element:<Details></Details>
       },
       {
         path:"/create",
