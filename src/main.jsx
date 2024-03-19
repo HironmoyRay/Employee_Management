@@ -23,8 +23,7 @@ const router = createBrowserRouter([
         element:<Employees></Employees>
       },
       {
-        path:"/employees/:id",
-        loader:()=>fetch("../public/daily_reports/daily_reports.JSON"),
+        path:"/details",
         element:<Details></Details>
       },
       {

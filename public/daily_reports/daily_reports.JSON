@@ -1,5 +1,5 @@
-{
-  "daily_reports": [
+
+  [
     {
       "id": "E01",
       "name": "John Doe",
@@ -121,4 +121,4 @@
       "post": "Poured concrete for foundation of new structure."
     }
   ]
-}
+
