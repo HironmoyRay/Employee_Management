@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { CgProfile } from "react-icons/cg";
+import { FaSitemap } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [open, setOpen] = useState(false);
-
   return (
     // <div className=" bg-PRIMARY text-WHITE flex items-center">
     //   <div className="hidden lg:block flex-none  px-10">
@@ -73,35 +72,60 @@ const Header = () => {
             className=" menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-PRIMARY-light  rounded-box w-52"
           >
             <li>
-              <NavLink>Employees</NavLink>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink>Create</NavLink>
+              <NavLink to="/employees">Employees</NavLink>
             </li>
             <li>
-              <NavLink>Employees</NavLink>
+              <NavLink to="/create">Create</NavLink>
+            </li>
+            <li>
+              <NavLink to="/signin">Signin</NavLink>
             </li>
           </ul>
         </div>
-        {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
-        <NavLink className="btn btn-ghost text-xl">MARVELOUS</NavLink>
+
+        <NavLink to="/" className="btn btn-ghost text-base hidden lg:flex  lg:text-xl mx-4">
+          MARVELOUS
+        </NavLink>
+      </div>
+      <div className="navbar-center flex lg:hidden ">
+        <NavLink to="/" className="btn btn-ghost text-base">
+          MARVELOUS
+        </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu-horizontal px-1">
           <li className="mx-4">
-            <NavLink className="">Employees</NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="mx-4">
-            <NavLink>Create</NavLink>
+            <NavLink to="/employees">Employees</NavLink>
           </li>
           <li className="mx-4">
-            <NavLink>Employees</NavLink>
+            <NavLink to="/create">Create</NavLink>
+          </li>
+          <li className="mx-4">
+            <NavLink to="/signin">Sign In</NavLink>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <NavLink className="px-4">Profile</NavLink>
-        <NavLink className="px-4">Sites</NavLink>
+      <div className="navbar-end mx-4">
+        <NavLink
+          to="/profile"
+          className="px-4 tooltip tooltip-bottom"
+          data-tip="Profile"
+        >
+          <CgProfile />
+        </NavLink>
+        <NavLink
+          to="/allSites"
+          className="px-4 tooltip tooltip-bottom"
+          data-tip="All Sites"
+        >
+          <FaSitemap />
+        </NavLink>
       </div>
     </div>
   );

@@ -7,6 +7,9 @@ import CreateEmployee from "./pages/CreateEmployee/CreateEmployee";
 import SignInForm from "./pages/SignInForm/SignInForm";
 import Employees from "./pages/Employees/Employees";
 import Details from "./pages/Details/Details";
+import Profile from "./pages/Profile/Profile";
+import AllSites from "./pages/AllSites/AllSites";
+import DashBoard from "./pages/DashBoard/DashBoard";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +18,7 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        // element:<h1>This is From Home.</h1>
+        element:<DashBoard></DashBoard>
       },
       {
         path:"/employees",
@@ -33,6 +36,15 @@ const router = createBrowserRouter([
       {
         path:"/signin",
         element:<SignInForm></SignInForm>
+      }
+      ,
+      {
+        path:"/profile",
+        element:<Profile></Profile>
+      },
+      {
+        path:"/allSites",
+        element:<AllSites></AllSites>
       }
     ]
   },
