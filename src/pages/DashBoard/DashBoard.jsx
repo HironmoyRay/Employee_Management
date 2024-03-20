@@ -1,17 +1,17 @@
 const DashBoard = () => {
   return (
-    <div>
+    <div className="m-10 mb-20">
       <h1 className="text-center font-bold text-xl text-SECONDARY  ">
         Employee Management & Time Log
       </h1>
-      <div className="grid grid-cols-3 gap-10 m-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 m-10">
         <div className="card card-compact  bg-base-100 shadow-xl mt-4">
           <div className="card-body text-SECONDARY ">
             <h2 className="card-title px-4">Admin</h2>
             <hr />
             <div className="flex font-medium px-4">
               <p className="text-left ">Total:</p>
-              <p className="text-right  ">02</p>
+              <p className="text-right  ">01</p>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ const DashBoard = () => {
           <tbody>
             <tr>
               <td>admin001@gamil.com</td>
-              <td>
+              <td className="flex">
                 <button className="bg-SECONDARY hover:bg-SECONDARY-dark font-medium text-WHITE  rounded-sm px-4 py-1 me-4">
                   Edit
                 </button>
@@ -56,17 +56,7 @@ const DashBoard = () => {
                 </button>
               </td>
             </tr>
-            <tr>
-              <td>admin002@gamil.com</td>
-              <td>
-                <button className="bg-SECONDARY hover:bg-SECONDARY-dark font-medium text-WHITE  rounded-sm px-4 py-1 me-4">
-                  Edit
-                </button>
-                <button className="bg-DANGER-light hover:bg-DANGER font-medium text-WHITE  rounded-sm px-4 py-1 ms-4">
-                  Delete
-                </button>
-              </td>
-            </tr>
+            
           </tbody>
         </table>
       </div>

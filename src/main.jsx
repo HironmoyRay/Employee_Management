@@ -89,6 +89,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/allSites",
+        loader:()=> fetch("../public/sites/sites.json"),
         element: <AllSites></AllSites>,
       },
     ],

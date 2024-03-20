@@ -1,13 +1,13 @@
 const Profile = () => {
   return (
     <div>
-      <div className="hero  bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="flex justify-center">
+        <div className="hero-content flex-col md:flex-row-reverse gap-10">
           <img
-            src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-            className="max-w-sm rounded-lg shadow-2xl"
+            src="/src/assets/images/p5.jpeg"
+            className="max-w-md rounded-lg shadow-2xl"
           />
-          <div>
+          <div className="">
             <h1 className="text-5xl font-bold">JHON DOE</h1>
             <h1 className="text-3xl font-bold pt-4">Site Manager</h1>
             <div className="py-6">

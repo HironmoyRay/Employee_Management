@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Site A",
+    "img": "/src/assets/images/siteA.jpg",
+    "manager": ["Michael Johnson"],
+    "total_employee": 20,
+    "location": "Cityville",
+    "status": "Open",
+    "starts": "Monday, 8:00 AM",
+    "ends": "Friday, 5:00 PM"
+  },
+  {
+    "name": "Site B",
+    "img": "/src/assets/images/siteB.jpg",
+    "manager": ["Jessica Miller Roy"],
+    "total_employee": 15,
+    "location": "Townsville",
+    "status": "Open",
+    "starts": "Monday, 8:30 AM",
+    "ends": "Friday, 6:00 PM"
+  },
+  {
+    "name": "Site C",
+    "img": "/src/assets/images/siteC.jpeg",
+    "manager": ["James Rodriguez"],
+    "total_employee": 18,
+    "location": "Villagetown",
+    "status": "Open",
+    "starts": "Monday, 9:00 AM",
+    "ends": "Friday, 5:30 PM"
+  },
+  {
+    "name": "Site D",
+    "img": "/src/assets/images/siteD.jpeg",
+    "manager": ["John Doe"],
+    "total_employee": 12,
+    "location": "Hamletville",
+    "status": "Closed",
+    "starts": "Monday, 7:30 AM",
+    "ends": "Friday, 4:30 PM"
+  }
+]
