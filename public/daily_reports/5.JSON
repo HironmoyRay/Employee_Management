@@ -1,11 +1,15 @@
 {
   "id": "E05",
   "name": "David Brown",
+  "address": "567 Pine Street, Burgtown, State, Country",
+  "email": "david.brown@example.com",
+  "phone": "+1555666777",
   "img": "/src/assets/images/p5.jpeg",
   "work_site": "Site B",
   "entry_time": "08:30",
   "exit_time": "16:30",
   "work_hour": 8,
+  "weekly_total_hour": 45,
   "monthly_total_hour": 160,
   "yearly_total_hour": 1920,
   "post": "Assembled and installed new furniture in meeting rooms."

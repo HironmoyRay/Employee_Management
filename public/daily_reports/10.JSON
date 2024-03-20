@@ -1,11 +1,15 @@
 {
   "id": "E10",
   "name": "Linda Martinez",
+  "address": "901 Cherry Lane, Burgtown, State, Country",
+  "email": "linda.martinez@example.com",
+  "phone": "+1000111222",
   "img": "/src/assets/images/p10.jpeg",
   "work_site": "Site C",
   "entry_time": "07:00",
   "exit_time": "13:00",
   "work_hour": 6,
+  "weekly_total_hour": 42,
   "monthly_total_hour": 138,
   "yearly_total_hour": 1656,
   "post": "Poured concrete for foundation of new structure."

@@ -1,11 +1,15 @@
 {
   "id": "E08",
   "name": "Sarah Garcia",
+  "address": "678 Walnut Court, Townsville, State, Country",
+  "email": "sarah.garcia@example.com",
+  "phone": "+1888999000",
   "img": "/src/assets/images/p8.jpeg",
   "work_site": "Site A",
   "entry_time": "08:00",
   "exit_time": "16:00",
   "work_hour": 8,
+  "weekly_total_hour": 42,
   "monthly_total_hour": 147,
   "yearly_total_hour": 1764,
   "post": "Installed new HVAC system in main building."
