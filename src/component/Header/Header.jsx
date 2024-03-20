@@ -48,7 +48,7 @@ const Header = () => {
     //     <h1 className="text-center px-10">Site</h1>
     //   </div>
     // </div>
-    <div className="navbar bg-PRIMARY-light  text-WHITE ">
+    <div className="navbar bg-PRIMARY-light  text-WHITE  ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

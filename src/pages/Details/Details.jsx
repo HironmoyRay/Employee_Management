@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
-
 const Details = () => {
   const details = useLoaderData();
   const {
@@ -19,24 +18,27 @@ const Details = () => {
   } = details;
 
   const [current, setCurrent] = useState(new Date());
-  useEffect(()=>{
+  useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrent(new Date());
     }, 1000);
     return () => clearInterval(intervalId);
-  },[])
+  }, []);
 
   return (
     <div>
-      <div className="flex justify-around items-center">
-        <div>
-          <div className="hero-content">
-            <img src={img} className="w-60 h-60 rounded-full shadow-2xl" />
-            <div>
-              <h1 className="text-5xl font-bold">{name}</h1>
-              <p className="py-2">{post}</p>
-              <p className="">{site}</p>
-              <p className="">ID: {id}</p>
+      <div className="flex flex-col lg:flex-row justify-around items-center mb-20">
+        <div className="hero-content flex-col md:flex-row gap-10">
+          <img
+            src={img}
+            className="w-40 md:w-60 h-40 md:h-60 rounded-full shadow-2xl"
+          />
+          <div>
+            <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold">{name}</h1>
+            <p className="py-2">{post}</p>
+            <p className="">{site}</p>
+            <p className="">ID: {id}</p>
+            <div className="flex justify-center  md:justify-start ">
               <button className="bg-PRIMARY-light hover:bg-PRIMARY   text-WHITE  rounded-md px-4 py-2 my-4">
                 Update
               </button>
@@ -44,14 +46,12 @@ const Details = () => {
           </div>
         </div>
         <div>
+        <div  className="mt-10">
+          <span className="text-xl font-medium text-SECONDARY border-b-2">
+            {current.toLocaleString()}
+          </span>
+
           <table className="table table-sm ">
-            <thead>
-              <tr>
-                <th>
-                  <span>{current.toLocaleString()}</span>
-                </th>
-              </tr>
-            </thead>
             <tbody>
               <tr>
                 <th>Entry Time:</th>
@@ -64,9 +64,11 @@ const Details = () => {
             </tbody>
           </table>
         </div>
-        <div>
+        <div className="my-10">
+          <p className="text-center text-xl font-medium text-SECONDARY border-b-2">
+            Summary
+          </p>
           <table className="table table-sm">
-            
             <tbody>
               <tr>
                 <th>Last Day</th>
@@ -95,6 +97,8 @@ const Details = () => {
             </tbody>
           </table>
         </div>
+        </div>
+        
       </div>
     </div>
   );
