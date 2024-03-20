@@ -1,0 +1,12 @@
+{
+  "id": "E02",
+  "name": "Jane Smith",
+  "img": "/src/assets/images/p2.jpeg",
+  "work_site": "Site B",
+  "entry_time": "09:00",
+  "exit_time": "16:00",
+  "work_hour": 7,
+  "monthly_total_hour": 147,
+  "yearly_total_hour": 1764,
+  "post": "Installed new electrical wiring in office area."
+}

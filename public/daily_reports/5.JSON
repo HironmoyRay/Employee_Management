@@ -1,0 +1,12 @@
+{
+  "id": "E05",
+  "name": "David Brown",
+  "img": "/src/assets/images/p5.jpeg",
+  "work_site": "Site B",
+  "entry_time": "08:30",
+  "exit_time": "16:30",
+  "work_hour": 8,
+  "monthly_total_hour": 160,
+  "yearly_total_hour": 1920,
+  "post": "Assembled and installed new furniture in meeting rooms."
+}

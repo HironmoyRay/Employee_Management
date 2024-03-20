@@ -1,0 +1,12 @@
+{
+  "id": "E03",
+  "name": "Michael Johnson",
+  "img": "/src/assets/images/p3.jpeg",
+  "work_site": "Site A",
+  "entry_time": "08:30",
+  "exit_time": "17:30",
+  "work_hour": 9,
+  "monthly_total_hour": 172.5,
+  "yearly_total_hour": 2070,
+  "post": "Laid foundation for upcoming project."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "E09",
+  "name": "James Rodriguez",
+  "img": "/src/assets/images/p9.jpeg",
+  "work_site": "Site B",
+  "entry_time": "08:30",
+  "exit_time": "15:30",
+  "work_hour": 7,
+  "monthly_total_hour": 172.5,
+  "yearly_total_hour": 2070,
+  "post": "Surveyed land for future expansion project."
+}

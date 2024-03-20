@@ -1,7 +1,10 @@
+import { useLoaderData } from "react-router-dom";
+
 const Details = () => {
+  const details = useLoaderData()
   return (
     <div>
-      <h1>This is Details: </h1>
+      <h1>Details: {details.id}</h1>
     </div>
   );
 };

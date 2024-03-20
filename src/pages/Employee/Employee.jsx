@@ -37,12 +37,10 @@ const Employee = ({ employee }) => {
           <sub> hours</sub>
         </td>
         <td>
-          <Link to={"/details"}><button className="bg-PRIMARY-light hover:bg-PRIMARY   text-WHITE  rounded-md px-2">
+          <Link to={`/details/${id}`}><button className="bg-PRIMARY-light hover:bg-PRIMARY   text-WHITE  rounded-md px-2">
             Details
           </button></Link>
-          <Link to={"/details"}><button className="bg-PRIMARY-light hover:bg-PRIMARY   text-WHITE  rounded-md px-2">
-            Details
-          </button></Link>
+          
         </td>
       </tr>
     </tbody>

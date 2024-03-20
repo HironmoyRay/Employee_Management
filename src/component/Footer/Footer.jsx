@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
     <div
-      className="container mx-auto p-4 bg-SECONDARY-lightest text-center"
+      className="w-full p-4 bg-SECONDARY-lightest text-center"
       style={{ position: "fixed", bottom: "0px" }}
     >
-      <small>Marvelous Technology</small>
+      <small className="font-medium  ">Marvelous Technology</small>
     </div>
   );
 };
