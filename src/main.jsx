@@ -4,12 +4,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./component/Home/Home";
 import "./index.css";
 import AllSites from "./pages/AllSites/AllSites";
-import CreateEmployee from "./pages/CreateEmployee/CreateEmployee";
 import DashBoard from "./pages/DashBoard/DashBoard";
 import Details from "./pages/Details/Details";
 import Employees from "./pages/Employees/Employees";
 import Profile from "./pages/Profile/Profile";
 import SignInForm from "./pages/SignInForm/SignInForm";
+import User from "./pages/User/User";
 
 const router = createBrowserRouter([
   {
@@ -76,8 +76,8 @@ const router = createBrowserRouter([
         element: <Details></Details>,
       },
       {
-        path: "/create",
-        element: <CreateEmployee></CreateEmployee>,
+        path: "/user",
+        element: <User></User>,
       },
       {
         path: "/signin",
@@ -89,7 +89,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/allSites",
-        loader:()=> fetch("../public/sites/sites.json"),
+        loader: () => fetch("../public/sites/sites.json"),
         element: <AllSites></AllSites>,
       },
     ],

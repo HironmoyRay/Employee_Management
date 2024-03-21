@@ -78,7 +78,7 @@ const Header = () => {
               <NavLink to="/employees">Employees</NavLink>
             </li>
             <li>
-              <NavLink to="/create">Create</NavLink>
+              <NavLink to="/user">User</NavLink>
             </li>
             <li>
               <NavLink to="/signin">Signin</NavLink>
@@ -104,7 +104,7 @@ const Header = () => {
             <NavLink to="/employees">Employees</NavLink>
           </li>
           <li className="mx-4">
-            <NavLink to="/create">Create</NavLink>
+            <NavLink to="/user">User</NavLink>
           </li>
           <li className="mx-4">
             <NavLink to="/signin">Sign In</NavLink>
