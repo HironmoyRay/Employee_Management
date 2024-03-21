@@ -1,4 +1,4 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 // const details = useLoaderData();
 
 const Employee = ({ employee }) => {
@@ -18,9 +18,8 @@ const Employee = ({ employee }) => {
   return (
     <tbody>
       <tr>
-        <th>{id}</th>
-        <td>{name}</td>
-        {/* <td>{post}</td> */}
+        {/* <th>{id}</th> */}
+        {/* <td>{name}</td>
         <td>{work_site}</td>
         <td>{entry_time}</td>
         <td>{exit_time}</td>
@@ -35,12 +34,13 @@ const Employee = ({ employee }) => {
         <td>
           {yearly_total_hour}
           <sub> hours</sub>
-        </td>
+        </td> */}
         <td>
-          <Link to={`/details/${id}`}><button className="bg-PRIMARY-light hover:bg-PRIMARY   text-WHITE  rounded-md px-2">
-            Details
-          </button></Link>
-          
+          {/* <Link to={`/details/${id}`}>
+            <button className="bg-PRIMARY-light hover:bg-PRIMARY   text-WHITE  rounded-sm px-2">
+              Details
+            </button>
+          </Link> */}
         </td>
       </tr>
     </tbody>
