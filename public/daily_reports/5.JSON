@@ -1,16 +1,11 @@
 {
-  "id": "E05",
-  "name": "David Brown",
-  "address": "567 Pine Street, Burgtown, State, Country",
-  "email": "david.brown@example.com",
-  "phone": "+1555666777",
-  "img": "/src/assets/images/p5.jpeg",
-  "work_site": "Site B",
-  "entry_time": "08:30",
-  "exit_time": "16:30",
-  "work_hour": 8,
-  "weekly_total_hour": 45,
-  "monthly_total_hour": 160,
-  "yearly_total_hour": 1920,
-  "post": "Assembled and installed new furniture in meeting rooms."
+  "GUID": "5e6f7g8h9i0a1b2c3d",
+  "EID": "1005",
+  "Name": "David Wilson",
+  "First_Name": "David",
+  "Last_Name": "Wilson",
+  "Email": "david.wilson@example.com",
+  "Join_Date": "2022-05-12",
+  "Terminal": "B",
+  "Created": "2022-05-12"
 }

@@ -1,16 +1,11 @@
 {
-  "id": "E06",
-  "name": "Jessica Miller",
-  "address": "890 Cedar Drive, Villagetown, State, Country",
-  "email": "jessica.miller@example.com",
-  "phone": "+1666777888",
-  "img": "/src/assets/images/p6.jpeg",
-  "work_site": "Site A",
-  "entry_time": "09:00",
-  "exit_time": "16:00",
-  "work_hour": 7,
-  "weekly_total_hour": 42,
-  "monthly_total_hour": 147,
-  "yearly_total_hour": 1764,
-  "post": "Performed routine maintenance on heavy machinery."
+  "GUID": "6f7g8h9i0a1b2c3d4e",
+  "EID": "1006",
+  "Name": "Sarah Brown",
+  "First_Name": "Sarah",
+  "Last_Name": "Brown",
+  "Email": "sarah.brown@example.com",
+  "Join_Date": "2022-06-30",
+  "Terminal": "C",
+  "Created": "2022-06-30"
 }

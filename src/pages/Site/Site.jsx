@@ -1,14 +1,6 @@
 const Site = ({ site }) => {
-  const {
-    name,
-    img,
-    manager,
-    location,
-    status,
-    total_employee,
-    starts,
-    ends,
-  } = site;
+  const { name, img, manager, location, status, total_employee, starts, ends } =
+    site;
   return (
     <div className="">
       <div className="card bg-base-100 shadow-xl">
@@ -20,18 +12,8 @@ const Site = ({ site }) => {
           <p className="font-medium text-xl">Manager: {manager}</p>
           <p className="font-medium">Total Employee: {total_employee}</p>
           <p className="font-medium">Location: {location}</p>
-          <table className="table">
-            <tbody>
-              <tr>
-                <th>Starts</th>
-                <td className="text-right">{starts}</td>
-              </tr>
-              <tr>
-                <th>Ends</th>
-                <td className="text-right">{ends}</td>
-              </tr>
-            </tbody>
-          </table>
+          <p className="font-medium bg-PRIMARY-dark  px-4 py-1 rounded text-WHITE "> {status}</p>
+          
         </div>
       </div>
     </div>

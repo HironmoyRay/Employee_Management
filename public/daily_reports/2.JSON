@@ -1,16 +1,11 @@
 {
-  "id": "E02",
-  "name": "Jane Smith",
-  "address": "456 Elm Avenue, Townsville, State, Country",
-  "email": "jane.smith@example.com",
-  "phone": "+1987654321",
-  "img": "/src/assets/images/p2.jpeg",
-  "work_site": "Site B",
-  "entry_time": "09:00",
-  "exit_time": "16:00",
-  "work_hour": 7,
-  "weekly_total_hour": 42,
-  "monthly_total_hour": 147,
-  "yearly_total_hour": 1764,
-  "post": "Installed new electrical wiring in office area."
+  "GUID": "2b3c4d5e6f7g8h9i0a",
+  "EID": "1002",
+  "Name": "Jane Smith",
+  "First_Name": "Jane",
+  "Last_Name": "Smith",
+  "Email": "jane.smith@example.com",
+  "Join_Date": "2022-02-10",
+  "Terminal": "B",
+  "Created": "2022-02-10"
 }

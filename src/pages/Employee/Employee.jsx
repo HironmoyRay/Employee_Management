@@ -1,46 +1,51 @@
-import { Link } from "react-router-dom";
 // const details = useLoaderData();
+import { CiEdit } from "react-icons/ci";
+import { MdDelete, MdTerminal } from "react-icons/md";
 
 const Employee = ({ employee }) => {
   const {
-    id,
-    name,
-    img,
-    work_site,
-    work_hour,
-    entry_time,
-    exit_time,
-    post,
-    monthly_total_hour,
-    yearly_total_hour,
+    GUID,
+    EID,
+    Name,
+    First_Name,
+    Last_Name,
+    Email,
+    Join_Date,
+    Terminal,
+    Created,
   } = employee;
 
   return (
     <tbody>
-      <tr>
-        {/* <th>{id}</th> */}
-        {/* <td>{name}</td>
-        <td>{work_site}</td>
-        <td>{entry_time}</td>
-        <td>{exit_time}</td>
-        <td>
-          {work_hour}
-          <sub> hours</sub>
-        </td>
-        <td>
-          {monthly_total_hour}
-          <sub> hours</sub>
-        </td>
-        <td>
-          {yearly_total_hour}
-          <sub> hours</sub>
-        </td> */}
-        <td>
-          {/* <Link to={`/details/${id}`}>
-            <button className="bg-PRIMARY-light hover:bg-PRIMARY   text-WHITE  rounded-sm px-2">
-              Details
-            </button>
-          </Link> */}
+      <tr className="hover:bg-SECONDARY-lightest">
+        <th >{GUID}</th>
+        <td >{EID}</td>
+        <td >{Name}</td>
+        <td >{First_Name}</td>
+        <td >{Last_Name}</td>
+        <td >{Email}</td>
+        <td >{Join_Date}</td>
+        <td >{Terminal}</td>
+        <td >{Created}</td>
+        <td >
+          <div className="flex items-center justify-between ">
+            <div>
+              <a href="" className="tooltip" data-tip="Edit">
+                <CiEdit />
+              </a>
+            </div>
+            <div>
+              <a href="" className="tooltip" data-tip="Delete">
+                <MdDelete />
+              </a>
+            </div>
+
+            <div>
+              <a href="" className="tooltip" data-tip="Terminal">
+                <MdTerminal />
+              </a>
+            </div>
+          </div>
         </td>
       </tr>
     </tbody>

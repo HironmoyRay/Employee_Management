@@ -1,16 +1,11 @@
 {
-  "id": "E04",
-  "name": "Emily Williams",
-  "address": "321 Maple Lane, Hamletville, State, Country",
-  "email": "emily.williams@example.com",
-  "phone": "+1443322111",
-  "img": "/src/assets/images/p4.jpeg",
-  "work_site": "Site C",
-  "entry_time": "07:00",
-  "exit_time": "13:00",
-  "work_hour": 6,
-  "weekly_total_hour": 42,
-  "monthly_total_hour": 138,
-  "yearly_total_hour": 1656,
-  "post": "Painted exterior walls of existing structure."
+  "GUID": "4d5e6f7g8h9i0a1b2c",
+  "EID": "1004",
+  "Name": "Emily Davis",
+  "First_Name": "Emily",
+  "Last_Name": "Davis",
+  "Email": "emily.davis@example.com",
+  "Join_Date": "2022-04-20",
+  "Terminal": "A",
+  "Created": "2022-04-20"
 }

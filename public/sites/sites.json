@@ -5,9 +5,9 @@
     "manager": ["Michael Johnson"],
     "total_employee": 20,
     "location": "Cityville",
-    "status": "Open",
-    "starts": "Monday, 8:00 AM",
-    "ends": "Friday, 5:00 PM"
+    "status": "Running...",
+    "starts": "2020-01-01",
+    "ends": "2025-12-31"
   },
   {
     "name": "Site B",
@@ -15,9 +15,9 @@
     "manager": ["Jessica Miller Roy"],
     "total_employee": 15,
     "location": "Townsville",
-    "status": "Open",
-    "starts": "Monday, 8:30 AM",
-    "ends": "Friday, 6:00 PM"
+    "status": "Completed",
+    "starts": "2021-06-31",
+    "ends": "2023-04-31"
   },
   {
     "name": "Site C",
@@ -25,18 +25,8 @@
     "manager": ["James Rodriguez"],
     "total_employee": 18,
     "location": "Villagetown",
-    "status": "Open",
-    "starts": "Monday, 9:00 AM",
-    "ends": "Friday, 5:30 PM"
-  },
-  {
-    "name": "Site D",
-    "img": "/src/assets/images/siteD.jpeg",
-    "manager": ["John Doe"],
-    "total_employee": 12,
-    "location": "Hamletville",
-    "status": "Closed",
-    "starts": "Monday, 7:30 AM",
-    "ends": "Friday, 4:30 PM"
+    "status": "Running...",
+    "starts": "2022-12-01",
+    "ends": "2025-12-31"
   }
 ]

@@ -1,16 +1,11 @@
 {
-  "id": "E07",
-  "name": "Christopher Wilson",
-  "address": "234 Birch Boulevard, Cityville, State, Country",
-  "email": "christopher.wilson@example.com",
-  "phone": "+1777888999",
-  "img": "/src/assets/images/p7.jpeg",
-  "work_site": "Site C",
-  "entry_time": "08:00",
-  "exit_time": "17:00",
-  "work_hour": 9,
-  "weekly_total_hour": 45,
-  "monthly_total_hour": 160,
-  "yearly_total_hour": 1920,
-  "post": "Excavated area for underground utilities installation."
+  "GUID": "7g8h9i0a1b2c3d4e5f",
+  "EID": "1007",
+  "Name": "Matthew Taylor",
+  "First_Name": "Matthew",
+  "Last_Name": "Taylor",
+  "Email": "matthew.taylor@example.com",
+  "Join_Date": "2022-07-08",
+  "Terminal": "A",
+  "Created": "2022-07-08"
 }
