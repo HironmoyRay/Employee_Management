@@ -6,11 +6,12 @@ import "./index.css";
 // import AllSites from "./pages/AllSites/AllSites";
 import DashBoard from "./pages/DashBoard/DashBoard";
 // import Details from "./pages/Details/Details";
+import Calender from "./pages/Calender/Calender";
 import Employees from "./pages/Employees/Employees";
 import Profile from "./pages/Profile/Profile";
 import SignInForm from "./pages/SignInForm/SignInForm";
-import User from "./pages/User/User";
 import Terminal from "./pages/Terminal/Terminal";
+import User from "./pages/User/User";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         path: "/employees",
         loader: () => fetch("../public/daily_reports/..JSON"),
         element: <Employees></Employees>,
+      },
+      {
+        path: "/calender",
+        element: <Calender></Calender>,
       },
       // {
       //   path: "/details/E01",

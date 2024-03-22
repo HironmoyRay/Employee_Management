@@ -13,7 +13,7 @@ const Employees = () => {
             Create
           </button>
         </div>
-        <table className="table table-sm">
+        <table className="table table-sm  border-x border-SECONDARY-lightest    ">
           <thead className="">
             <tr className=" bg-PRIMARY-dark  text-WHITE  ">
               <th>GUID</th>
