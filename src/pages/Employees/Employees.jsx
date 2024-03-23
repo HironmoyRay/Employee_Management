@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import Create from "../Create/Create";
 import Employee from "../Employee/Employee";
 
 const Employees = () => {
@@ -9,9 +10,7 @@ const Employees = () => {
       <div className="overflow-x-auto px-4">
         <div className="flex justify-between my-4 ">
           <h1 className="text-SECONDARY font-bold ">Employee</h1>
-          <button className="bg-PRIMARY hover:bg-PRIMARY-dark   text-WHITE text-sm rounded px-4 py-1">
-            Create
-          </button>
+          <Create></Create>
         </div>
         <table className="table table-sm  border-x border-SECONDARY-lightest    ">
           <thead className="">

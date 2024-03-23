@@ -32,7 +32,7 @@ const SignInForm = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn bg-PRIMARY-light text-WHITE  ">
+              <button className=" bg-PRIMARY hover:bg-PRIMARY-dark   text-WHITE  rounded-sm p-2">
                 SignIn
               </button>
             </div>

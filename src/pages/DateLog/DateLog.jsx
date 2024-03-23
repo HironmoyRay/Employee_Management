@@ -69,8 +69,6 @@ const DateLog = () => {
                 <div className="h-6 "></div>
               </td>
             </tr>
-
-           
           </tbody>
         </table>
       </div>

@@ -60,7 +60,7 @@ const User = () => {
               />
             </div>
             <div className="form-control mt-6">
-              <button className="bg-PRIMARY-light hover:bg-PRIMARY   text-WHITE  rounded-md p-3">
+              <button className="bg-PRIMARY hover:bg-PRIMARY-dark   text-WHITE  rounded-sm p-2">
                 Create
               </button>
             </div>

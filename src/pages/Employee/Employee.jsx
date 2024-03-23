@@ -1,8 +1,9 @@
 // const details = useLoaderData();
-import { CiEdit } from "react-icons/ci";
-import { MdDelete } from "react-icons/md";
+
 import { SlCalender } from "react-icons/sl";
 import { Link } from "react-router-dom";
+import Delete from "../Delete/Delete";
+import Edit from "../Edit/Edit";
 
 const Employee = ({ employee }) => {
   const {
@@ -31,20 +32,16 @@ const Employee = ({ employee }) => {
         <td>{Created}</td>
         <td>
           <div className="flex items-center justify-between ">
-            <div>
-              <a href="" className="tooltip" data-tip="Edit">
-                <CiEdit />
-              </a>
+            <div className="hover:bg-SECONDARY-light px-1 rounded-sm">
+              <Edit></Edit>
             </div>
-            <div>
-              <a href="" className="tooltip" data-tip="Delete">
-                <MdDelete />
-              </a>
+            <div className="hover:bg-SECONDARY-light px-1 rounded-sm">
+              <Delete></Delete>
             </div>
 
-            <div>
-              <Link to="/calender">
-                <SlCalender/>
+            <div className="hover:bg-SECONDARY-light px-1 rounded-sm">
+              <Link to="/calender" className="tooltip" data-tip="Timelog">
+                <SlCalender />
               </Link>
             </div>
           </div>
