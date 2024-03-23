@@ -7,17 +7,11 @@ const Header = () => {
     <div className=" bg-PRIMARY-dark  text-WHITE  text-base">
       <div className="flex justify-between  items-center max-w-screen-xl mx-auto">
         <ul className="flex flex-col md:flex-row justify-between  ">
-          {/* <li className="mx-4">
-            <NavLink to="/"></NavLink>
-          </li> */}
           <li className="mx-4 py-1">
             <NavLink to="/employees">Employees</NavLink>
           </li>
           <li className="mx-4 py-1">
             <NavLink to="/terminals">Terminal</NavLink>
-          </li>
-          <li className="mx-4 py-1">
-            <NavLink to="/user">User</NavLink>
           </li>
           <li className="mx-4 py-1">
             <NavLink to="/signin">Sign In</NavLink>

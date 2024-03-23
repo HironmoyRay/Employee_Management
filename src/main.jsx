@@ -11,7 +11,6 @@ import Employees from "./pages/Employees/Employees";
 import Profile from "./pages/Profile/Profile";
 import SignInForm from "./pages/SignInForm/SignInForm";
 import Terminal from "./pages/Terminal/Terminal";
-import User from "./pages/User/User";
 
 const router = createBrowserRouter([
   {
@@ -81,10 +80,7 @@ const router = createBrowserRouter([
       //   loader: () => fetch("../public/daily_reports/10.JSON"),
       //   element: <Details></Details>,
       // },
-      {
-        path: "/user",
-        element: <User></User>,
-      },
+
       {
         path: "/signin",
         element: <SignInForm></SignInForm>,

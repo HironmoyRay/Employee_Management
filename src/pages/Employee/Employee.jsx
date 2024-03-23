@@ -32,15 +32,19 @@ const Employee = ({ employee }) => {
         <td>{Created}</td>
         <td>
           <div className="flex items-center justify-between ">
-            <div className="hover:bg-SECONDARY-light px-1 rounded-sm">
+            <div>
               <Edit></Edit>
             </div>
-            <div className="hover:bg-SECONDARY-light px-1 rounded-sm">
-              <Delete></Delete>
+            <div>
+              <Delete Name={Name}></Delete>
             </div>
 
-            <div className="hover:bg-SECONDARY-light px-1 rounded-sm">
-              <Link to="/calender" className="tooltip" data-tip="Timelog">
+            <div className="">
+              <Link
+                to="/calender"
+                className="tooltip hover:bg-SECONDARY-light p-1 rounded-sm"
+                data-tip="Timelog"
+              >
                 <SlCalender />
               </Link>
             </div>

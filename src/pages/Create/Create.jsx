@@ -82,19 +82,17 @@ const Create = () => {
             </div>
           </form>
           <div className="modal-action">
-            <form method="dialog">
-              <button className="bg-SECONDARY  hover:bg-SECONDARY-dark    text-WHITE text-sm rounded px-4 py-1 me-4">
-                Close
-              </button>
-              <button className="bg-PRIMARY hover:bg-PRIMARY-dark   text-WHITE text-sm rounded px-4 py-1">
+            <form method="dialog" className="flex gap-4">
+              <button className="bg-PRIMARY hover:bg-PRIMARY-dark text-WHITE text-sm rounded px-4 py-1">
                 Submit
+              </button>
+              <button className="bg-SECONDARY  hover:bg-SECONDARY-dark text-WHITE text-sm rounded px-4 py-1">
+                Close
               </button>
             </form>
           </div>
         </div>
       </dialog>
-
-      
     </div>
   );
 };
