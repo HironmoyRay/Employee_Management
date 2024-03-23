@@ -10,6 +10,7 @@ import Calender from "./pages/Calender/Calender";
 import Employees from "./pages/Employees/Employees";
 import Profile from "./pages/Profile/Profile";
 import SignInForm from "./pages/SignInForm/SignInForm";
+import Site from "./pages/Site/Site";
 import Terminal from "./pages/Terminal/Terminal";
 
 const router = createBrowserRouter([
@@ -30,57 +31,6 @@ const router = createBrowserRouter([
         path: "/calender",
         element: <Calender></Calender>,
       },
-      // {
-      //   path: "/details/E01",
-      //   loader: () => fetch("../public/daily_reports/1.JSON"),
-      //   element: <Details></Details>,
-      // },
-      // {
-      //   path: "/details/E02",
-      //   loader: () => fetch("../public/daily_reports/2.JSON"),
-      //   element: <Details></Details>,
-      // },
-      // {
-      //   path: "/details/E03",
-      //   loader: () => fetch("../public/daily_reports/3.JSON"),
-      //   element: <Details></Details>,
-      // },
-      // {
-      //   path: "/details/E04",
-      //   loader: () => fetch("../public/daily_reports/4.JSON"),
-      //   element: <Details></Details>,
-      // },
-      // {
-      //   path: "/details/E05",
-      //   loader: () => fetch("../public/daily_reports/5.JSON"),
-      //   element: <Details></Details>,
-      // },
-      // {
-      //   path: "/details/E06",
-      //   loader: () => fetch("../public/daily_reports/6.JSON"),
-      //   element: <Details></Details>,
-      // },
-      // {
-      //   path: "/details/E07",
-      //   loader: () => fetch("../public/daily_reports/7.JSON"),
-      //   element: <Details></Details>,
-      // },
-      // {
-      //   path: "/details/E08",
-      //   loader: () => fetch("../public/daily_reports/8.JSON"),
-      //   element: <Details></Details>,
-      // },
-      // {
-      //   path: "/details/E09",
-      //   loader: () => fetch("../public/daily_reports/9.JSON"),
-      //   element: <Details></Details>,
-      // },
-      // {
-      //   path: "/details/E10",
-      //   loader: () => fetch("../public/daily_reports/10.JSON"),
-      //   element: <Details></Details>,
-      // },
-
       {
         path: "/signin",
         element: <SignInForm></SignInForm>,
@@ -94,6 +44,7 @@ const router = createBrowserRouter([
         loader: () => fetch("../public/sites/sites.json"),
         element: <Terminal></Terminal>,
       },
+    
     ],
   },
 ]);

@@ -26,9 +26,9 @@ const Header = () => {
             <CgProfile />
           </NavLink>
           <NavLink
-            to="/allSites"
+            to="/site"
             className="px-4 tooltip tooltip-bottom py-1"
-            data-tip="All Sites"
+            data-tip="Site"
           >
             <FaSitemap />
           </NavLink>

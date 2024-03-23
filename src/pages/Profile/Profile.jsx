@@ -5,7 +5,7 @@ const Profile = () => {
         <div className="hero-content flex-col md:flex-row-reverse gap-10">
           <img
             src="/src/assets/images/p5.jpeg"
-            className="max-w-md rounded-lg shadow-2xl"
+            className="max-w-md rounded-sm"
           />
           <div className="">
             <h1 className="text-5xl font-bold">JHON DOE</h1>
@@ -20,9 +20,11 @@ const Profile = () => {
               </ol>
             </div>
             <div>
-              <h2 className="text-xl py-6 font-medium">Work Experience: 3 Years</h2>
+              <h2 className="text-xl py-6 font-medium">
+                Work Experience: 3 Years
+              </h2>
             </div>
-            <button className="bg-PRIMARY-light hover:bg-PRIMARY   text-WHITE  rounded-xl px-4 py-2">
+            <button className="bg-PRIMARY hover:bg-PRIMARY-dark   text-WHITE px-4 py-1 rounded-sm">
               Update
             </button>
           </div>

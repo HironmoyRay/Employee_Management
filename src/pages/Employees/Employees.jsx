@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Create from "../Create/Create";
 import Employee from "../Employee/Employee";
 import Pagination from "../Pagination/Pagination";
+// import Delete from "../Delete/Delete";
 
 const Employees = () => {
   const employees = useLoaderData();

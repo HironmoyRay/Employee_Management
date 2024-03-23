@@ -1,0 +1,10 @@
+{
+  "name": "Site A",
+  "img": "/src/assets/images/siteA.jpg",
+  "manager": ["Michael Johnson"],
+  "total_employee": 20,
+  "location": "Cityville",
+  "status": "Running...",
+  "starts": "2020-01-01",
+  "ends": "2025-12-31"
+}

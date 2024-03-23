@@ -36,7 +36,7 @@ const Employee = ({ employee }) => {
               <Edit></Edit>
             </div>
             <div>
-              <Delete Name={Name}></Delete>
+              <Delete></Delete>
             </div>
 
             <div className="">

@@ -1,8 +1,7 @@
 // import { MdDelete } from "react-icons/md";
 import { AiOutlineDelete } from "react-icons/ai";
 
-const Delete = ({Name}) => {
-  
+const Delete = () => {
   return (
     <div>
       <button
@@ -14,7 +13,7 @@ const Delete = ({Name}) => {
       </button>
       <dialog id="delete_Modal" className="modal">
         <div className="modal-box rounded">
-          <h3 className="font-bold text-lg">Delete {Name}</h3>
+          <h3 className="font-bold text-lg">Delete </h3>
           <p className="py-4">
             Are you sure you would like to delete this employee from database?
             This action can not be undone.
