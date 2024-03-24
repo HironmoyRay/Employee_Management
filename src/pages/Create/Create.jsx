@@ -1,7 +1,6 @@
 const Create = () => {
   return (
     <div>
-      {/* Open the modal using document.getElementById('ID').showModal() method */}
       <button
         className="bg-PRIMARY hover:bg-PRIMARY-dark   text-WHITE text-sm rounded px-4 py-1"
         onClick={() => document.getElementById("create_Modal").showModal()}
@@ -17,7 +16,7 @@ const Create = () => {
                 type="text"
                 name="eid"
                 placeholder="EID"
-                id=""
+                id="create-id"
                 className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY"
               />
             </div>
@@ -27,7 +26,7 @@ const Create = () => {
                 type="text"
                 name="First Name"
                 placeholder="First Name"
-                id=""
+                id="create-first-name"
                 className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY "
               />
             </div>
@@ -37,7 +36,7 @@ const Create = () => {
                 type="text"
                 name="Last Name"
                 placeholder="Last Name"
-                id=""
+                id="create-last-name"
                 className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY "
               />
             </div>
@@ -47,7 +46,7 @@ const Create = () => {
                 type="email"
                 name="email"
                 placeholder="Email"
-                id=""
+                id="email-create"
                 className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY "
               />
             </div>
@@ -57,7 +56,7 @@ const Create = () => {
                 type="password"
                 name="password"
                 placeholder="Password"
-                id=""
+                id="password-create"
                 className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY "
               />
             </div>
@@ -67,7 +66,7 @@ const Create = () => {
                 type="password"
                 placeholder="Confirm Password"
                 name="confirm-password"
-                id=""
+                id="create-password"
                 className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY"
               />
             </div>

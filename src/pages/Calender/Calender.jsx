@@ -21,7 +21,7 @@ const Calender = () => {
             <td className="border-2 w-36 p-0 h-8 border-SECONDARY">TUE</td>
             <td className="border-2 w-36 p-0 h-8 border-SECONDARY">WED</td>
             <td className="border-2 w-36 p-0 h-8 border-SECONDARY">THU</td>
-            <td className="border-2 w-36 p-0 h-8 border-SECONDARY">TRI</td>
+            <td className="border-2 w-36 p-0 h-8 border-SECONDARY">FRI</td>
             <td className="border-2 w-36 p-0 h-8 border-SECONDARY">SAT</td>
             <td className="border-2 w-36 p-0 h-8 border-SECONDARY text-center">
               TOTAL

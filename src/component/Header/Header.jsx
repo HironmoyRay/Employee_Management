@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className=" bg-PRIMARY-dark  text-WHITE  text-base">
+    <div className=" bg-PRIMARY-dark  text-WHITE  text-base fixed top-0 left-0 right-0">
       <div className="flex justify-between  items-center max-w-screen-xl mx-auto">
-        <ul className="flex flex-col md:flex-row justify-between  ">
+        <ul className="flex justify-between  ">
           <li className="mx-4 py-1">
             <NavLink to="/employees">Employees</NavLink>
           </li>
@@ -17,7 +17,7 @@ const Header = () => {
             <NavLink to="/signin">Sign In</NavLink>
           </li>
         </ul>
-        <div className="flex flex-col md:flex-row justify-between  items-center  my-4">
+        <div className="flex  justify-between  items-center  my-4">
           <NavLink
             to="/profile"
             className="px-4 tooltip tooltip-bottom py-1"

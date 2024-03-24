@@ -34,6 +34,10 @@ export default {
       WHITE: {
         DEFAULT: "#ffffff",
       },
+      YELLOW:{
+        light: "#f4ed8e",
+        DEFAULT: "#f7df4a",
+      }
     },
   },
   plugins: [require("daisyui")],
