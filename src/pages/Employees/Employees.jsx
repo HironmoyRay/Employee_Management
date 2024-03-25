@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import AddLunchHour from "../../component/AddLunchHour/AddLunchHour";
 import ReduceLaunchHOur from "../../component/ReduceLunchHour/ReduceLunchHour";
@@ -7,7 +8,12 @@ import Pagination from "../Pagination/Pagination";
 
 const Employees = () => {
   const employees = useLoaderData();
+  const [isAllSelected, setAllSelected] = useState(false);
 
+  const handleAllCheckboxClick = () => {
+    setAllSelected(!isAllSelected);
+  };
+console.log(isAllSelected);
   return (
     <div className=" max-w-screen-xl mx-auto px-4">
       <div className="flex justify-between my-4">
@@ -31,7 +37,15 @@ const Employees = () => {
         <table className="table table-sm  border-x border-SECONDARY-lightest">
           <thead className="">
             <tr className=" bg-PRIMARY-dark  text-WHITE  ">
-              <th></th>
+              <td>
+                <input
+                  type="checkbox"
+                  onChange={handleAllCheckboxClick}
+                  checked={isAllSelected}
+                  name=""
+                  id=""
+                />
+              </td>
               <th>GUID</th>
               <th>EID</th>
               <th>Name</th>
@@ -45,7 +59,7 @@ const Employees = () => {
             </tr>
           </thead>
           {employees.map((employee) => (
-            <Employee key={employee.EID} employee={employee}></Employee>
+            <Employee key={employee.EID} employee={employee} isAllSelected={isAllSelected}></Employee>
           ))}
         </table>
       </div>

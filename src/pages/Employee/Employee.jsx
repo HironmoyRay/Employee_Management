@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Delete from "../Delete/Delete";
 import Edit from "../Edit/Edit";
 
-const Employee = ({ employee }) => {
+const Employee = ({ employee, isAllSelected }) => {
   const {
     GUID,
     EID,
@@ -28,7 +28,7 @@ const Employee = ({ employee }) => {
     <tbody>
       <tr
         className={`hover:bg-SECONDARY-lightest ${
-          isSelected ? "bg-YELLOW-light hover:bg-YELLOW" : " "
+          isSelected || isAllSelected ? "bg-YELLOW-light hover:bg-YELLOW" : " "
         } `}
       >
         <td>

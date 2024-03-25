@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className=" bg-PRIMARY-dark  text-WHITE  text-base fixed top-0 left-0 right-0">
+    <div style={{zIndex:100}} className=" bg-PRIMARY-dark  text-WHITE  text-base fixed top-0 left-0 right-0 ">
       <div className="flex justify-between  items-center max-w-screen-xl mx-auto">
         <ul className="flex justify-between  ">
           <li className="mx-4 py-1">

@@ -8,9 +8,11 @@ const DateLog = () => {
       <div className="ps-32 mt-8">
         <table className="border-2 border-SECONDARY-light ">
           <thead>
-            <th className="w-40 p-0 h-10">TIME</th>
-            <th className="w-40 p-0 h-10">ACTIVITY</th>
-            <th className="w-40 p-0 h-10">PLACE</th>
+            <tr>
+              <th className="w-40 p-0 h-10">TIME</th>
+              <th className="w-40 p-0 h-10">ACTIVITY</th>
+              <th className="w-40 p-0 h-10">PLACE</th>
+            </tr>
           </thead>
           <tbody className="text-center text-WHITE">
             <tr className="">
