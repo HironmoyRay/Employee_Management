@@ -40,10 +40,7 @@ const Calender = () => {
                 26
               </div>
               <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between">
-                <div>
-                  LB <span></span>
-                </div>
-                <div></div>
+                
               </div>
             </td>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
@@ -51,10 +48,7 @@ const Calender = () => {
                 27
               </div>
               <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between">
-                <div>
-                  LB <span></span>
-                </div>
-                <div></div>
+              
               </div>
             </td>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
@@ -62,10 +56,7 @@ const Calender = () => {
                 28
               </div>
               <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between">
-                <div>
-                  LB <span></span>
-                </div>
-                <div></div>
+                
               </div>
             </td>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
@@ -73,10 +64,7 @@ const Calender = () => {
                 29
               </div>
               <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between">
-                <div>
-                  LB <span></span>
-                </div>
-                <div></div>
+               
               </div>
             </td>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
@@ -84,10 +72,7 @@ const Calender = () => {
                 30
               </div>
               <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between">
-                <div>
-                  LB <span></span>
-                </div>
-                <div></div>
+              
               </div>
             </td>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
