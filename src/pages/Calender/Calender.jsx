@@ -32,48 +32,38 @@ const Calender = () => {
         <tbody>
           {/* Week 1 */}
           <tr>
-            <td className="border-2 border-SECONDARY p-1 text-center">
+            <th className="border-2 border-SECONDARY p-1 text-center">
               <span>Week</span> <span> 1</span>
-            </td>
+            </th>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
               <div className="text-right h-8 text-xl text-SECONDARY-light  font-semibold  pr-2 hover:bg-SECONDARY-dark hover:text-WHITE">
                 26
               </div>
-              <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between">
-                
-              </div>
+              <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between"></div>
             </td>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
               <div className="text-right h-8 text-xl text-SECONDARY-light  font-semibold  pr-2 hover:bg-SECONDARY-dark hover:text-WHITE">
                 27
               </div>
-              <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between">
-              
-              </div>
+              <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between"></div>
             </td>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
               <div className="text-right h-8 text-xl text-SECONDARY-light   font-semibold  pr-2 hover:bg-SECONDARY-dark hover:text-WHITE">
                 28
               </div>
-              <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between">
-                
-              </div>
+              <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between"></div>
             </td>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
               <div className="text-right h-8 text-xl text-SECONDARY-light   font-semibold  pr-2 hover:bg-SECONDARY-dark hover:text-WHITE">
                 29
               </div>
-              <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between">
-               
-              </div>
+              <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between"></div>
             </td>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
               <div className="text-right h-8 text-xl text-SECONDARY-light  font-semibold  pr-2 hover:bg-SECONDARY-dark hover:text-WHITE">
                 30
               </div>
-              <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between">
-              
-              </div>
+              <div className="text-right h-8 text-SECONDARY-light   font-medium pr-2 hover:bg-SECONDARY hover:text-WHITE flex justify-between"></div>
             </td>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
               <div className="text-right h-8 text-xl  font-semibold  pr-2 hover:bg-SECONDARY-dark hover:text-WHITE">
@@ -123,9 +113,9 @@ const Calender = () => {
 
           {/* Week 2 */}
           <tr>
-            <td className="border-2 border-SECONDARY p-1 text-center">
+            <th className="border-2 border-SECONDARY p-1 text-center">
               <span>Week</span> <span> 2</span>
-            </td>
+            </th>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
               <div className="text-right h-8 text-xl  font-semibold  pr-2 hover:bg-SECONDARY-dark hover:text-WHITE">
                 3
@@ -274,9 +264,9 @@ const Calender = () => {
 
           {/* Week 3 */}
           <tr>
-            <td className="border-2 border-SECONDARY p-1 text-center">
+            <th className="border-2 border-SECONDARY p-1 text-center">
               <span>Week</span> <span> 3</span>
-            </td>
+            </th>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
               <div className="text-right h-8 text-xl  font-semibold  pr-2 hover:bg-SECONDARY-dark hover:text-WHITE">
                 10
@@ -425,9 +415,9 @@ const Calender = () => {
 
           {/* Week 4 */}
           <tr>
-            <td className="border-2 border-SECONDARY p-1 text-center">
+            <th className="border-2 border-SECONDARY p-1 text-center">
               <span>Week</span> <span> 4</span>
-            </td>
+            </th>
 
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
               <div className="text-right h-8 text-xl  font-semibold  pr-2 hover:bg-SECONDARY-dark hover:text-WHITE">
@@ -577,9 +567,9 @@ const Calender = () => {
 
           {/* Week 5 */}
           <tr>
-            <td className="border-2 border-SECONDARY p-1 text-center">
+            <th className="border-2 border-SECONDARY p-1 text-center">
               <span>Week</span> <span> 5</span>
-            </td>
+            </th>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
               <div className="text-right h-8 text-xl  font-semibold  pr-2 hover:bg-SECONDARY-dark hover:text-WHITE">
                 24
@@ -728,9 +718,9 @@ const Calender = () => {
 
           {/* Week 6 */}
           <tr>
-            <td className="border-2 border-SECONDARY p-1 text-center">
+            <th className="border-2 border-SECONDARY p-1 text-center">
               <span>Week</span> <span> 6</span>
-            </td>
+            </th>
             <td className="border-2 border-SECONDARY  w-36 p-0 hover:bg-SECONDARY-light">
               <div className="text-right h-8 text-xl  font-semibold  pr-2 hover:bg-SECONDARY-dark hover:text-WHITE">
                 31

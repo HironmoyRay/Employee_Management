@@ -8,6 +8,7 @@ import Employees from "./pages/Employees/Employees";
 import Profile from "./pages/Profile/Profile";
 import SignInForm from "./pages/SignInForm/SignInForm";
 import Terminal from "./pages/Terminal/Terminal";
+import NewSite from "./component/NewSite/NewSite";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
         path: "/terminals",
         loader: () => fetch("../public/sites/sites.json"),
         element: <Terminal></Terminal>,
+      },
+      {
+        path: "/site",
+        element: <NewSite></NewSite>,
       },
     ],
   },
