@@ -78,16 +78,18 @@ const Employee = ({ employee, isAllSelected }) => {
   );
 };
 
-Employee.prototype = {
-  GUID: PropTypes.number,
-  EID: PropTypes.number,
-  Name: PropTypes.string,
-  First_Name: PropTypes.string,
-  Last_Name: PropTypes.string,
-  Email: PropTypes.String,
-  Join_Date: PropTypes.string,
-  Terminal: PropTypes.string,
-  Created: PropTypes.string,
+Employee.propTypes = {
+  employee: PropTypes.object.isRequired,
+  isAllSelected: PropTypes.bool.isRequired,
+  GUID: PropTypes.number.isRequired,
+  EID: PropTypes.number.isRequired,
+  Name: PropTypes.string.isRequired,
+  First_Name: PropTypes.string.isRequired,
+  Last_Name: PropTypes.string.isRequired,
+  Email: PropTypes.String.isRequired,
+  Join_Date: PropTypes.string.isRequired,
+  Terminal: PropTypes.string.isRequired,
+  Created: PropTypes.string.isRequired,
 };
 
 export default Employee;
