@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SlCalender } from "react-icons/sl";
 import { Link } from "react-router-dom";
 import Delete from "../Delete/Delete";
@@ -19,6 +19,12 @@ const Employee = ({ employee, isAllSelected }) => {
   } = employee;
 
   const [isSelected, setIsSelected] = useState(false);
+
+  // Update the selected state based on isAllSelected prop
+  useEffect(() => {
+    setIsSelected(isAllSelected);
+  }, [isAllSelected]);
+  
 
   const handleCheckboxClick = () => {
     setIsSelected(!isSelected);

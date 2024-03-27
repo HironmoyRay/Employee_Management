@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useLoaderData } from "react-router-dom";
 import AddLunchHour from "../../component/AddLunchHour/AddLunchHour";
 import ReduceLaunchHOur from "../../component/ReduceLunchHour/ReduceLunchHour";
 import Create from "../Create/Create";
@@ -8,11 +7,8 @@ import Pagination from "../Pagination/Pagination";
 import data from "./main2.json";
 
 const Employees = () => {
-  // const employees = useLoaderData();
-// fetch("../public/daily_reports/..JSON").then (res => res.json()).then (data => setEmployees(data));
-
-const [employees,setEmployees]=useState(data);
-console.log(employees);
+  const [employees, setEmployees] = useState(data);
+  console.log(employees);
 
   const [isAllSelected, setAllSelected] = useState(false);
 
