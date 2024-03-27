@@ -17,12 +17,12 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        loader: () => fetch("../public/daily_reports/..JSON"),
+        // loader: () => fetch("../public/daily_reports/..JSON"),
         element: <Employees></Employees>,
       },
       {
         path: "/employees",
-        loader: () => fetch("../public/daily_reports/..JSON"),
+        // loader: () => fetch("../public/daily_reports/..JSON"),
         element: <Employees></Employees>,
       },
       {

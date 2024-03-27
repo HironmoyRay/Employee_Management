@@ -1,0 +1,112 @@
+[
+  {
+    "GUID": "1a2b3c4d5e6f7g8h9i",
+    "EID": "1001",
+    "Name": "John Doe",
+    "First_Name": "John",
+    "Last_Name": "Doe",
+    "Email": "john.doe@example.com",
+    "Join_Date": "2022-01-15",
+    "Terminal": "A",
+    "Created": "2022-01-15"
+  },
+  {
+    "GUID": "2b3c4d5e6f7g8h9i0a",
+    "EID": "1002",
+    "Name": "Jane Smith",
+    "First_Name": "Jane",
+    "Last_Name": "Smith",
+    "Email": "jane.smith@example.com",
+    "Join_Date": "2022-02-10",
+    "Terminal": "B",
+    "Created": "2022-02-10"
+  },
+  {
+    "GUID": "3c4d5e6f7g8h9i0a1b",
+    "EID": "1003",
+    "Name": "Michael Johnson",
+    "First_Name": "Michael",
+    "Last_Name": "Johnson",
+    "Email": "michael.johnson@example.com",
+    "Join_Date": "2022-03-05",
+    "Terminal": "C",
+    "Created": "2022-03-05"
+  },
+  {
+    "GUID": "4d5e6f7g8h9i0a1b2c",
+    "EID": "1004",
+    "Name": "Emily Davis",
+    "First_Name": "Emily",
+    "Last_Name": "Davis",
+    "Email": "emily.davis@example.com",
+    "Join_Date": "2022-04-20",
+    "Terminal": "A",
+    "Created": "2022-04-20"
+  },
+  {
+    "GUID": "5e6f7g8h9i0a1b2c3d",
+    "EID": "1005",
+    "Name": "David Wilson",
+    "First_Name": "David",
+    "Last_Name": "Wilson",
+    "Email": "david.wilson@example.com",
+    "Join_Date": "2022-05-12",
+    "Terminal": "B",
+    "Created": "2022-05-12"
+  },
+  {
+    "GUID": "6f7g8h9i0a1b2c3d4e",
+    "EID": "1006",
+    "Name": "Sarah Brown",
+    "First_Name": "Sarah",
+    "Last_Name": "Brown",
+    "Email": "sarah.brown@example.com",
+    "Join_Date": "2022-06-30",
+    "Terminal": "C",
+    "Created": "2022-06-30"
+  },
+  {
+    "GUID": "7g8h9i0a1b2c3d4e5f",
+    "EID": "1007",
+    "Name": "Matthew Taylor",
+    "First_Name": "Matthew",
+    "Last_Name": "Taylor",
+    "Email": "matthew.taylor@example.com",
+    "Join_Date": "2022-07-08",
+    "Terminal": "A",
+    "Created": "2022-07-08"
+  },
+  {
+    "GUID": "8h9i0a1b2c3d4e5f6g",
+    "EID": "1008",
+    "Name": "Jessica Martinez",
+    "First_Name": "Jessica",
+    "Last_Name": "Martinez",
+    "Email": "jessica.martinez@example.com",
+    "Join_Date": "2022-08-25",
+    "Terminal": "B",
+    "Created": "2022-08-25"
+  },
+  {
+    "GUID": "9i0a1b2c3d4e5f6g7h",
+    "EID": "1009",
+    "Name": "Daniel Anderson",
+    "First_Name": "Daniel",
+    "Last_Name": "Anderson",
+    "Email": "daniel.anderson@example.com",
+    "Join_Date": "2022-09-14",
+    "Terminal": "C",
+    "Created": "2022-09-14"
+  },
+  {
+    "GUID": "0a1b2c3d4e5f6g7h8i",
+    "EID": "1010",
+    "Name": "Olivia Hernandez",
+    "First_Name": "Olivia",
+    "Last_Name": "Hernandez",
+    "Email": "olivia.hernandez@example.com",
+    "Join_Date": "2022-10-03",
+    "Terminal": "A",
+    "Created": "2022-10-03"
+  }
+]

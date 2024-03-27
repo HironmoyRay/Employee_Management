@@ -42,7 +42,7 @@ const Employee = ({ employee, isAllSelected }) => {
         </td>
         <th>
           <span className="font-mono text-SECONDARY">
-            {GUID.substring(0, 6).toUpperCase()}
+            {GUID && GUID.substring(0, 6).toUpperCase()}
           </span>
         </th>
         <td>{EID}</td>
@@ -81,15 +81,15 @@ const Employee = ({ employee, isAllSelected }) => {
 Employee.propTypes = {
   employee: PropTypes.object.isRequired,
   isAllSelected: PropTypes.bool.isRequired,
-  GUID: PropTypes.number.isRequired,
-  EID: PropTypes.number.isRequired,
-  Name: PropTypes.string.isRequired,
-  First_Name: PropTypes.string.isRequired,
-  Last_Name: PropTypes.string.isRequired,
-  Email: PropTypes.String.isRequired,
-  Join_Date: PropTypes.string.isRequired,
-  Terminal: PropTypes.string.isRequired,
-  Created: PropTypes.string.isRequired,
+  GUID: PropTypes.number,
+  EID: PropTypes.number,
+  Name: PropTypes.string,
+  First_Name: PropTypes.string,
+  Last_Name: PropTypes.string,
+  Email: PropTypes.func,
+  Join_Date: PropTypes.string,
+  Terminal: PropTypes.string,
+  Created: PropTypes.string,
 };
 
 export default Employee;

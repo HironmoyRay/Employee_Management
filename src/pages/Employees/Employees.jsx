@@ -5,15 +5,21 @@ import ReduceLaunchHOur from "../../component/ReduceLunchHour/ReduceLunchHour";
 import Create from "../Create/Create";
 import Employee from "../Employee/Employee";
 import Pagination from "../Pagination/Pagination";
+import data from "./main2.json";
 
 const Employees = () => {
-  const employees = useLoaderData();
+  // const employees = useLoaderData();
+// fetch("../public/daily_reports/..JSON").then (res => res.json()).then (data => setEmployees(data));
+
+const [employees,setEmployees]=useState(data);
+console.log(employees);
+
   const [isAllSelected, setAllSelected] = useState(false);
 
   const handleAllCheckboxClick = () => {
     setAllSelected(!isAllSelected);
   };
-console.log(isAllSelected);
+  // console.log(isAllSelected);
   return (
     <div className=" max-w-screen-xl mx-auto px-4">
       <div className="flex justify-between my-4">
@@ -21,7 +27,7 @@ console.log(isAllSelected);
         <div className="flex gap-4">
           <AddLunchHour></AddLunchHour>
           <ReduceLaunchHOur></ReduceLaunchHOur>
-          <Create></Create>
+          <Create employees={employees} setEmployees={setEmployees}></Create>
         </div>
       </div>
       <div>
@@ -59,7 +65,11 @@ console.log(isAllSelected);
             </tr>
           </thead>
           {employees.map((employee) => (
-            <Employee key={employee.EID} employee={employee} isAllSelected={isAllSelected}></Employee>
+            <Employee
+              key={employee.EID}
+              employee={employee}
+              isAllSelected={isAllSelected}
+            ></Employee>
           ))}
         </table>
       </div>
