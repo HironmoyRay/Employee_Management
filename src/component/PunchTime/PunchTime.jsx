@@ -74,7 +74,7 @@
 
 import { useEffect, useState } from "react";
 
-const Punchin = () => {
+const PunchTime = () => {
   const [currentTime, setCurrentTime] = useState("");
   const [currentDate, setCurrentDate] = useState("");
 
@@ -95,52 +95,64 @@ const Punchin = () => {
     setCurrentDate(formattedDate);
   }, []);
 
+  const handleCloseModal = () => {
+    document.getElementById("punch-in").close();
+  };
+
   return (
     <div>
       <button
         className="bg-PRIMARY hover:bg-PRIMARY-dark text-WHITE text-sm rounded px-4 py-1"
         onClick={() => document.getElementById("punch-in").showModal()}
       >
-        Punch in
+        Punch Time
       </button>
-      <dialog id="punch-in" className="modal">
-        <div className="modal-box rounded">
-          <form action="">
-            <div className="flex justify-between my-1">
-              <p className="w-40">Select Time</p>
-              <input
-                type="time"
-                name="select-time"
-                value={currentTime}
-                className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY"
-                onChange={(e) => setCurrentTime(e.target.value)}
-              />
+      <form>
+        <dialog id="punch-in" className="modal">
+          <div className="modal-box rounded">
+            <div action="">
+              <div className="flex justify-between my-1">
+                <p className="w-40">Select Time</p>
+                <input
+                  type="time"
+                  name="select-time"
+                  value={currentTime}
+                  className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY"
+                  onChange={(e) => setCurrentTime(e.target.value)}
+                />
+              </div>
+              <div className="flex justify-between my-1">
+                <p className="w-40">Select Date</p>
+                <input
+                  type="date"
+                  name="select-date"
+                  value={currentDate}
+                  className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY"
+                  onChange={(e) => setCurrentDate(e.target.value)}
+                />
+              </div>
             </div>
-            <div className="flex justify-between my-1">
-              <p className="w-40">Select Date</p>
-              <input
-                type="date"
-                name="select-date"
-                value={currentDate}
-                className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY"
-                onChange={(e) => setCurrentDate(e.target.value)}
-              />
+            <div className="modal-action">
+              <div className="flex gap-4">
+                <button
+                  className="bg-PRIMARY hover:bg-PRIMARY-dark text-WHITE text-sm rounded px-4 py-1"
+                  onClick={handleCloseModal}
+                >
+                  Punch in
+                </button>
+                <button
+                  className="bg-SECONDARY hover:bg-SECONDARY-dark text-WHITE text-sm rounded px-4 py-1"
+                  onClick={handleCloseModal}
+                >
+                  Close
+                </button>
+              </div>
             </div>
-          </form>
-          <div className="modal-action">
-            <form method="dialog" className="flex gap-4">
-              <button className="bg-PRIMARY hover:bg-PRIMARY-dark text-WHITE text-sm rounded px-4 py-1">
-                Punch in
-              </button>
-              <button className="bg-SECONDARY hover:bg-SECONDARY-dark text-WHITE text-sm rounded px-4 py-1">
-                Close
-              </button>
-            </form>
           </div>
-        </div>
-      </dialog>
+        </dialog>
+      </form>
     </div>
   );
 };
 
-export default Punchin;
+export default PunchTime;
