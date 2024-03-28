@@ -5,10 +5,10 @@ import Create from "../Create/Create";
 import Employee from "../Employee/Employee";
 import Pagination from "../Pagination/Pagination";
 import data from "./main2.json";
+import Punchin from "../../component/Punchin/Punchin";
 
 const Employees = () => {
   const [employees, setEmployees] = useState(data);
-  console.log(employees);
 
   const [isAllSelected, setAllSelected] = useState(false);
 
@@ -21,6 +21,7 @@ const Employees = () => {
       <div className="flex justify-between my-4">
         <h1 className="text-SECONDARY font-bold ">Employee</h1>
         <div className="flex gap-4">
+          <Punchin></Punchin>
           <AddLunchHour></AddLunchHour>
           <ReduceLaunchHOur></ReduceLaunchHOur>
           <Create employees={employees} setEmployees={setEmployees}></Create>

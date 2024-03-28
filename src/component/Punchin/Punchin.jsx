@@ -1,33 +1,55 @@
 // window.onload = function () {
+//   // Get current time
 //   var now = new Date();
+//   var hours = now.getHours();
+//   var minutes = now.getMinutes();
+
+//   // Format date as YYYY-MM-DD
 //   var year = now.getFullYear();
 //   var month = (now.getMonth() + 1 < 10 ? "0" : "") + (now.getMonth() + 1);
+// //   console.log(now.getMonth());
+
 //   var day = (now.getDate() < 10 ? "0" : "") + now.getDate();
 
-//   var currentDates = month + "-" + day + "-" + year;
-//   console.log(currentDates);
+//   // Format time as HH:MM
+//   var currentTime =
+//     (hours < 10 ? "0" : "") + hours + ":" + (minutes < 10 ? "0" : "") + minutes;
+//   // Current Date
+//   var currentDate = year + "-" + month + "-" + day;
 
-//   document.getElementById("reduce-date").value = currentDates;
+//   // Set default value to the input field
+//   document.getElementById("punch-time").value = currentTime;
+//   document.getElementById("punch-date").value = currentDate;
 // };
 
-// const ReduceLaunchHOur = () => {
+// const Punchin = () => {
 //   return (
 //     <div>
 //       <button
 //         className="bg-PRIMARY hover:bg-PRIMARY-dark   text-WHITE text-sm rounded px-4 py-1"
-//         onClick={() => document.getElementById("reduce-lunch").showModal()}
+//         onClick={() => document.getElementById("punch-in").showModal()}
 //       >
-//         Reduce Lunch Hour
+//         Punch in
 //       </button>
-//       <dialog id="reduce-lunch" className="modal">
+//       <dialog id="punch-in" className="modal">
 //         <div className="modal-box rounded">
 //           <form action="">
-//             <div className="flex justify-between my-1">
+//             <div className="flex justify-between  my-1">
+//               <p className="w-40">Select Time</p>
+
+//               <input
+//                 type="time"
+//                 name="select-time"
+//                 id="punch-time"
+//                 className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY "
+//               />
+//             </div>
+//             <div className="flex justify-between  my-1">
 //               <p className="w-40">Select Date</p>
 //               <input
 //                 type="date"
 //                 name="select-date"
-//                 id="reduce-date"
+//                 id="punch-date"
 //                 className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY "
 //               />
 //             </div>
@@ -35,7 +57,7 @@
 //           <div className="modal-action">
 //             <form method="dialog" className="flex gap-4">
 //               <button className="bg-PRIMARY hover:bg-PRIMARY-dark text-WHITE text-sm rounded px-4 py-1">
-//                 Reduce Lunch Hour
+//                 Punch in
 //               </button>
 //               <button className="bg-SECONDARY  hover:bg-SECONDARY-dark text-WHITE text-sm rounded px-4 py-1">
 //                 Close
@@ -48,51 +70,69 @@
 //   );
 // };
 
-// export default ReduceLaunchHOur;
+// export default Punchin;
 
 import { useEffect, useState } from "react";
 
-const ReduceLaunchHour = () => {
+const Punchin = () => {
+  const [currentTime, setCurrentTime] = useState("");
   const [currentDate, setCurrentDate] = useState("");
 
   useEffect(() => {
     const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
     const year = now.getFullYear();
     const month = (now.getMonth() + 1 < 10 ? "0" : "") + (now.getMonth() + 1);
     const day = (now.getDate() < 10 ? "0" : "") + now.getDate();
-    const currentDates = `${year}-${month}-${day}`;
-    setCurrentDate(currentDates);
+
+    const formattedTime = `${(hours < 10 ? "0" : "") + hours}:${
+      (minutes < 10 ? "0" : "") + minutes
+    }`;
+    const formattedDate = `${year}-${month}-${day}`;
+
+    setCurrentTime(formattedTime);
+    setCurrentDate(formattedDate);
   }, []);
 
   return (
     <div>
       <button
         className="bg-PRIMARY hover:bg-PRIMARY-dark text-WHITE text-sm rounded px-4 py-1"
-        onClick={() => document.getElementById("reduce-lunch").showModal()}
+        onClick={() => document.getElementById("punch-in").showModal()}
       >
-        Reduce Lunch Hour
+        Punch in
       </button>
-      <dialog id="reduce-lunch" className="modal">
+      <dialog id="punch-in" className="modal">
         <div className="modal-box rounded">
           <form action="">
+            <div className="flex justify-between my-1">
+              <p className="w-40">Select Time</p>
+              <input
+                type="time"
+                name="select-time"
+                value={currentTime}
+                className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY"
+                onChange={(e) => setCurrentTime(e.target.value)}
+              />
+            </div>
             <div className="flex justify-between my-1">
               <p className="w-40">Select Date</p>
               <input
                 type="date"
                 name="select-date"
-                id="reduce-date"
-                value={currentDate} // Use state value here
-                onChange={(e) => setCurrentDate(e.target.value)} // Update state value here if needed
+                value={currentDate}
                 className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY"
+                onChange={(e) => setCurrentDate(e.target.value)}
               />
             </div>
           </form>
           <div className="modal-action">
             <form method="dialog" className="flex gap-4">
               <button className="bg-PRIMARY hover:bg-PRIMARY-dark text-WHITE text-sm rounded px-4 py-1">
-                Reduce Lunch Hour
+                Punch in
               </button>
-              <button className="bg-SECONDARY  hover:bg-SECONDARY-dark text-WHITE text-sm rounded px-4 py-1">
+              <button className="bg-SECONDARY hover:bg-SECONDARY-dark text-WHITE text-sm rounded px-4 py-1">
                 Close
               </button>
             </form>
@@ -103,4 +143,4 @@ const ReduceLaunchHour = () => {
   );
 };
 
-export default ReduceLaunchHour;
+export default Punchin;

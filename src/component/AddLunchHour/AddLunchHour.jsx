@@ -1,7 +1,18 @@
+import { useEffect, useState } from "react";
+
 const AddLunchHour = () => {
+  const [currentDate, setCurrentDate] = useState("");
+
+  useEffect(() => {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = (now.getMonth() + 1 < 10 ? "0" : "") + (now.getMonth() + 1);
+    const day = (now.getDate() < 10 ? "0" : "") + now.getDate();
+    const currentDates = `${year}-${month}-${day}`;
+    setCurrentDate(currentDates);
+  }, []);
   return (
     <div>
-     
       <button
         className="bg-PRIMARY hover:bg-PRIMARY-dark   text-WHITE text-sm rounded px-4 py-1"
         onClick={() => document.getElementById("add-lunch").showModal()}
@@ -16,7 +27,9 @@ const AddLunchHour = () => {
               <input
                 type="date"
                 name="select-date"
-                id="reduce-date"
+                id="add-date"
+                value={currentDate} // Use state value here
+                onChange={(e) => setCurrentDate(e.target.value)} // Update state value here if needed
                 className="border border-SECONDARY-light rounded outline-none w-52 px-1 hover:border-SECONDARY focus:border-SECONDARY "
               />
             </div>
